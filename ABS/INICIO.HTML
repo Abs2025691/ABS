@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #ffffff;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #FFD700;
+        color: #333;
+        text-align: center;
+        padding:2px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background: #333;
+        border-bottom: 3px solid #FFD700;
+        padding: 1rem;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 15px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #FFD700;
+        color: #000;
+        border-radius: 5px;
+    }
+
+    footer {
+        background-color: #55544e;
+        color: white;
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 800px;
+      border-radius: 15px;
+    }
+
+    form {
+      margin: 30px auto;
+      width: 60%;
+      background: #333;
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, button {
+      margin-top: 5px;
+      padding: 8px;
+      width: 100%;
+      border-radius: 8px;
+      border: none;
+    }
+
+    p {
+        margin: 20px;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ASBA</h1>
+        <p>Associação Brasileira de Autoajuda</p> 
+    </header>
+
+    <nav>
+        <a href="INICIO.HTML">INICIO</a>
+        <a href="TRILHAS.HTML">TRILHAS</a>
+        <a href="SOBRE.HTML">SOBRE</a>
+        <a href="CONTATOS.HTML">CONTATOS</a>
+    </nav>
+
+    <img src="https://tse3.mm.bing.net/th/id/OIP.6ZPI-w4cZJrbo2Ftn4RoUgHaEH?pid=Api&P=0&h=180">
+
+    <h2 style="text-align: center;"><strong>Qual é a nossa função</strong></h2>
+    <p style="text-align: center;">Nossa função é proporcionar uma experiencia agradavel aos usuarios do site, fazendo com que eles aintam prazer nas pequenas coisas na vida, e consigam sentir alivio no convivio social.</p>
+    <p style="text-align: center;">Cuidar de si mesmo é o ato mais fundamental de amor próprio. Não é egoísmo, mas sim uma necessidade. Pense nisso como a manutenção de um carro: se você não abastece, troca o óleo e calibra os pneus, ele eventualmente para de funcionar. Seu corpo e sua mente são seu "veículo" na vida, e o autocuidado é o combustível e a manutenção que garantem que você possa seguir em frente.</p>
+
+    <h2 style="text-align: center;">Cadastro</h2>
+    <form id="cadastroForm">
+        <label>Nome: <input type="text" id="nome" required></label>
+        <label>Idade: <input type="number" id="idade" required></label>
+        <label>Email: <input type="email" id="email" required></label>
+
+        <label>Gênero:</label>
+        <input type="radio" name="genero" value="Masculino"> Masculino
+        <input type="radio" name="genero" value="Feminino"> Feminino
+        <input type="radio" name="genero" value="Outro"> Outro
+    
+        <br><br>
+        <button type="button" onclick="validarFormulario()">Enviar</button>
+  </form>
+
+
+    <footer>
+        <p>&copy; 2025 ASBA - Associação Brasileira de Autoajuda</p>
+    </footer>
+
+    <script>
+        function validarFormulario() {
+            const nome = document.getElementById("nome").value;
+            const idade = document.getElementById("idade").value;
+            const email = document.getElementById("email").value;
+
+        if (nome === "" || idade === "" || email === "") {
+            alert("Preencha todos os campos obrigatórios!");
+        } else {
+            alert("Cadastro realizado com sucesso!");
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Projeto ASBA
+
+**Nome do projeto:** ASBA – um projeto de boa vivência com pessoas em situação de vulnerabilidade.  
+**Nome da ETEC:** Etec de Lins  
+
+## Integrantes
+
+- **Antonio Carlos Santana Evaristo** – Conteúdo e Projeto  
+- **Hugo Daniel Pinheiro dos Passos** – CSS e HTML  
+- **Matheus Pereira Jesus** – JS e Responsividade  
+- **João Daniel Marques Gomes** – Design e Interface  
+
+## Descrição do projeto
+
+O projeto é uma ideia revolucionária de lidar com os problemas que se agravam na adolescência, incluindo problemas sociais, ansiedade e depressão.  
+
+A iniciativa propõe enfrentar esses desafios por meio de **trilhas de aprendizado**, criando uma experiência mais imersiva com **tato social**.
